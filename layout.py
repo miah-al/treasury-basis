@@ -356,7 +356,10 @@ def tab_trading():
 
 
 # ─── Navbar ───────────────────────────────────────────────────────────────────
+import datetime as _dt
 from data import DEF_FUT as _DEF_FUT, DEF_REPO as _DEF_REPO
+
+_TODAY = _dt.date.today().strftime("%d %b %Y")
 
 navbar = dbc.Navbar(
     dbc.Container([
@@ -368,6 +371,8 @@ navbar = dbc.Navbar(
                 "color": C["muted"], "fontSize": "12px", "marginLeft": "4px"}),
         ]),
         html.Div([
+            html.Span(f"As of {_TODAY}",
+                style={"color": C["muted"], "fontSize": "11px", "marginRight": "16px"}),
             html.Span("Jun-2026 10yr T-Note Futures",
                 style={"color": C["muted"], "fontSize": "11px", "marginRight": "16px"}),
             html.Span(f"Fut: {_DEF_FUT:.3f}",
