@@ -1,0 +1,105 @@
+/* ── Treasury Basis Explorer — dark-theme overrides ─────────────────────── */
+
+/* ── Native select (dbc.Select) — dark theme ──────────────────────────── */
+select,
+select.form-select {
+    background-color: #0f1623 !important;
+    border: 1px solid #1e2d44 !important;
+    color: #dce8f5 !important;
+    font-size: 13px !important;
+    cursor: pointer !important;
+}
+
+select:focus,
+select.form-select:focus {
+    background-color: #0f1623 !important;
+    border-color: #60a5fa !important;
+    color: #dce8f5 !important;
+    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2) !important;
+    outline: none !important;
+}
+
+/* Options inside native select (limited cross-browser styling) */
+select option {
+    background-color: #0f1623 !important;
+    color: #dce8f5 !important;
+}
+
+select option:hover,
+select option:checked {
+    background-color: #1e2d44 !important;
+    color: #60a5fa !important;
+}
+
+/* ── Slider tooltip — dark themed ─────────────────────────────────────── */
+.rc-slider-tooltip-inner {
+    background-color: #0f1623 !important;
+    color: #dce8f5 !important;
+    border: 1px solid #1e2d44 !important;
+    font-size: 11px !important;
+    padding: 3px 8px !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+    min-width: unset !important;
+}
+
+.rc-slider-tooltip-arrow {
+    border-top-color: #1e2d44 !important;
+}
+
+.rc-slider-tooltip {
+    display: none !important;
+}
+
+/* ── Slider track & handle ───────────────────────────────────────────── */
+/* Full track (background rail) */
+.rc-slider-rail {
+    background-color: #1e2d44 !important;
+    height: 4px !important;
+}
+
+/* Filled portion of track (left of handle) */
+.rc-slider-track {
+    background-color: #6366f1 !important;
+    height: 4px !important;
+}
+
+/* Unfilled right portion — ensure it's visible */
+.rc-slider-step {
+    height: 4px !important;
+}
+
+/* Slider handle (circle) */
+.rc-slider-handle {
+    background-color: #6366f1 !important;
+    border-color: #818cf8 !important;
+    opacity: 1 !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin-top: -5px !important;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3) !important;
+}
+
+.rc-slider-handle:hover,
+.rc-slider-handle:active,
+.rc-slider-handle-dragging {
+    border-color: #a5b4fc !important;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.4) !important;
+}
+
+/* ── General page background ─────────────────────────────────────────── */
+body {
+    background-color: #080c14 !important;
+}
+
+/* ── DataTable scroll area ───────────────────────────────────────────── */
+.dash-spreadsheet-container .dash-spreadsheet-inner th,
+.dash-spreadsheet-container .dash-spreadsheet-inner td {
+    border-color: #1e2d44 !important;
+}
+
+/* ── Tab focus outline ───────────────────────────────────────────────── */
+.nav-link:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
